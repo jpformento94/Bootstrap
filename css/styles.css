@@ -1,0 +1,20 @@
+.card-lugares{
+   margin-top: 30px;
+}
+
+.card-body__lugares{
+    padding: 10px;
+    color: #fff;
+    font-size: small;
+}
+
+.container__form{
+    width: 60%;    
+}
+
+.button__form{
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(116, 235, 18);
+}
