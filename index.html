@@ -12,7 +12,7 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
 
                 <!-- logo -->
@@ -23,16 +23,16 @@
                 <!-- links -->  
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Los oradores</a>
+                      <a class="nav-link" href="#oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">El lugar y la fecha</a>
+                      <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">Coviértete en orador</a>
+                      <a class="nav-link" href="#oradores">Coviértete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-success">Comprar tickets</a>
@@ -43,7 +43,7 @@
     </header>
 
     <!-- carrusel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="conferencia" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">    
             <div class="carousel-item active">
                 <img src="/images/hawaii.jpg" class="d-block w-100" alt="imagen de buenos aires">
@@ -54,7 +54,7 @@
             <div class="carousel-item">
                 <img src="/images/hawaii3.jpg" class="d-block w-100" alt="imagen de buenos aires">
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
                 <h2 class="text-end">Conf Bs As</h2>
                 <p class="text-end">Bs As llega por primera vez a Argentina. Un evento para compartir con</p>
                 <p class="text-end">nuestra comunidad el conocimiento y experiencia de los expertos que</p> 
@@ -71,14 +71,16 @@
     </div>
 
     <!-- cards group -->
-    <div class="container">
+    <div id="oradores" class="container">
         <p class="text-center">CONOCE A LOS</p>
         <h3 class="text-center">ORADORES</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="/images/steve.jpg" class="card-img-top" alt="...">
+                <img src="/images/steve.jpg" class="card-img-top" alt="steve jobs">
                 <div class="card-body">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span id="span_react" class="badge">React</span>
                   <h5 class="card-title">Steve Jobs</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit voluptates culpa ullam qui, obcaecati modi dicta repellat et labore doloribus, veritatis nihil sed consectetur dolorum? Maiores itaque accusamus harum.</p>
                 </div>
@@ -86,8 +88,10 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/images/bill.jpg" class="card-img-top" alt="...">
+                <img src="/images/bill.jpg" class="card-img-top" alt="bill gates">
                 <div class="card-body">
+                  <span class="badge text-bg-warning">JavaScript</span>
+                  <span id="span_react" class="badge">React</span>
                   <h5 class="card-title">Bill Gates</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam placeat tenetur, nostrum fugit aperiam dicta assumenda, voluptatibus mollitia dolorem perspiciatis aspernatur asperiores quidem veniam distinctio totam laboriosam tempore tempora!</p>
                 </div>
@@ -95,8 +99,10 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/images/ada.jpeg" class="card-img-top" alt="...">
+                <img src="/images/ada.jpeg" class="card-img-top" alt="ada lovelace">
                 <div class="card-body">
+                  <span id="span_negocios" class="badge">Negocios</span>
+                  <span id="span_startups" class="badge">Starups</span>
                   <h5 class="card-title">Ada Lovelace</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit porro, provident quos dignissimos, voluptates non voluptatem aliquid in blanditiis nulla reiciendis. Architecto, neque asperiores deserunt qui cum aliquid nemo nisi!.</p>
                 </div>
@@ -106,7 +112,7 @@
     </div>
 
     <!-- card title -->
-    <div class="card-lugares mb-3 bg-dark" >
+    <div id="lugar" class="card-lugares mb-3" >
         <div class="row g-0">
           <div class="col-md-6">
             <img src="/images/honolulu.jpg" class="img-fluid rounded-start" alt="honolulu">
@@ -127,7 +133,7 @@
     
 
     <!-- form -->
-    <div class="container">
+    <div id="formulario" class="container">
       <div class="container__form">
         <p class="text-center">CONVIÉRTETE EN ORADOR</p>
         <h3 class="text-center">ORADOR</h3>
@@ -152,6 +158,33 @@
         
       </div>
     </div>
+
+    <footer>
+      <ul id="footer_navbar" class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Preguntas frecuentas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Términos y condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Estudiantes</a>
+        </li>
+      </ul>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

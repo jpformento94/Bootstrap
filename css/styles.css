@@ -1,3 +1,7 @@
+.carousel-caption {
+    margin-bottom: 150px;
+}
+
 .card-lugares{
    margin-top: 30px;
 }
@@ -8,13 +12,39 @@
     font-size: small;
 }
 
-.container__form{
-    width: 60%;    
-}
-
 .button__form{
     color: #fff;
     border-radius: 5px;
     border: 0px;
     background-color: rgb(116, 235, 18);
+}
+
+#navbar {
+    background-color: #383e42;
+}
+
+#lugar{
+    background-color: #383e42; 
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #315783; 
+}
+
+#footer_navbar a {
+    color: #fff;
+}
+
+#span_react {
+    background-color: rgb(0, 156, 156);
+}
+
+#span_negocios {
+    background-color: #7c858b;
+}
+
+#span_startups {
+    background-color: red;
 }
