@@ -1,5 +1,18 @@
+.carousel-item {
+    filter: brightness(0.6);
+}
+
 .carousel-caption {
-    margin-bottom: 150px;
+    text-align: right;
+    position: absolute;
+    text-decoration: solid;
+    top: 40%;
+    left: 40%;
+}
+
+.container__form {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .card-lugares{
@@ -17,6 +30,11 @@
     border-radius: 5px;
     border: 0px;
     background-color: rgb(116, 235, 18);
+}
+
+.container__formo {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #navbar {
