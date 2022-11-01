@@ -43,10 +43,10 @@
         </nav>
     </header>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4 " style="width: 60%; margin-left: 20%; ">
+    <div class="row row-cols-1 row-cols-md-3 g-4 descuentos">
       <div class="col-sm-6">
-        <div class="card border-primary rounded-0" style="margin: 15px 0px;  ">
-          <div class="card-body " style="text-align: center;">
+        <div class="card border-primary rounded-0">
+          <div class="card-body">
             <h5 class="card-title ">Estudiante</h5>
             <p class="card-text">Tiene un descuento</p>
             <p class="card-text"><strong>80%</strong></p>
@@ -56,8 +56,8 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="card rounded-0" style="border-color: green;margin: 15px 0px;">
-          <div class="card-body" style="text-align: center;">
+        <div class="card border-success rounded-0" >
+          <div class="card-body">
             <h5 class="card-title">Trainee</h5>
             <p class="card-text">Tiene un descuento</p>
             <p class="card-text"><strong>50%</strong></p>
@@ -67,8 +67,8 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="card border-warning rounded-0" style=" margin: 15px 0px;">
-          <div class="card-body" style="text-align: center;">
+        <div class="card border-warning rounded-0">
+          <div class="card-body">
             <h5 class="card-title">Junior</h5>
             <p class="card-text">Tiene un descuento</p>
             <p class="card-text"><strong>15%</strong></p>
@@ -79,10 +79,10 @@
       </div>
     </div>
 
-    <p style="text-align: center; margin-bottom: 0; font-size: 10px; margin-top: 1%;">VENTA </p>
-    <h2 class='fs-4' style="text-align: center; padding: 0; margin-top: 0;">VALOR DE TICKET $200</h2> 
+    <p class="texto-venta">VENTA </p>
+    <h2 class='valor-ticket'>VALOR DE TICKET $200</h2> 
 
-      <form style="width: 60%; margin-left: 20%;  " target="_blank" id="formulario"  name="form-tickets" >
+      <form class="form-usuario" target="_blank" id="formulario"  name="form-tickets" >
       
         <div class="col w-100">
           <div class="row   " >
@@ -90,7 +90,7 @@
             <div class=" col-sm-12 col-md-6 ">
              
               <input id="nombre" type="text" name="nombre" class="form-control " placeholder="Nombre" aria-label="nombre" onblur="validarnombre()" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
-              <label id="mensaje" style="width: auto;" ></label>
+              <label id="mensaje"></label>
             </div>
             <div class=" col-sm-12 col-md-6 ">
               <input id="apellido" type="text" name="apellido" class="form-control " placeholder="Apellido" aria-label="apellido" onblur="validarapellido()" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" >
@@ -107,18 +107,18 @@
 
           <div class="row">
             <div class="col-sm-12 col-md-6 ">
-              <div  class="form-text " style="color: black;" >
+              <div  class="text ">
                 Cantidad
               </div>
               <input id="cantidad" type="number" class="form-control form-text"  aria-label="cantidad" onblur="validarcantidad()">
               <label id="mensaje4"></label>
             </div>
             <div class="col-sm-12 col-md-6">
-              <div  class="form-text " style="color: black;" >
+              <div  class="text"  >
                Categoria
               </div>
 
-              <select id="categoria" class="form-select"  style="margin: 4px;" onblur="validarcategoria()">
+              <select id="categoria" class="form-select" onblur="validarcategoria()">
                 <option value="0.20">Estudiante</option>
                 <option value="0.5">Trainee</option>
                 <option value="0.85">Junior</option>
@@ -132,7 +132,7 @@
           <div class="row   " >
          
             <div class=" col-sm-12 ">
-              <input id="total" type="text" class="form-control " placeholder="Total a pagar: $" aria-label="First name" style="background-color: #CCE5FF;border-color:#CCE5FF ;" >
+              <input id="total" type="text" class="form-control " placeholder="Total a pagar: $" aria-label="First name">
             </div>
             
        
@@ -141,10 +141,10 @@
           <div class="col w-100 " >
            <div class="row p-0 ">
             <div class="col-sm-12 col-md-6">
-              <button class="btn btn-primary w-100" style="background-color: #96C93E;border: #96C93E ; margin: 1% 0 1% 0; " type="button" onclick="ponercero()">Borrar</button>
+              <button class="btn btn-primary w-100" type="button" onclick="ponercero()">Borrar</button>
             </div>
             <div class="col-sm-12 col-md-6">
-              <button class="btn btn-primary w-100 " style="background-color: #96C93E;border: #96C93E; margin: 1% 0 1% 0; " type="button"  onclick="validacion() " >Resumen</button>
+              <button class="btn btn-primary w-100 " type="button"  onclick="validacion() " >Resumen</button>
              
             </div>
             </div>
