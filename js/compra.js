@@ -83,7 +83,7 @@ function total()
 {
   let cant = document.getElementById("cantidad").value;
   
-  cant = cant * document.getElementById('categoria').value *100;
+  cant = cant * document.getElementById('categoria').value *200;
  
   document.getElementById("total").value = (`Total a pagar: $ ${cant}`);
 
