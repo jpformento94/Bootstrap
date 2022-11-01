@@ -101,7 +101,7 @@ function validacion()
 
 function ponercero()
 {
-  document.getElementById("nombre").focus();
+ document.getElementById("nombre").focus();
  document.getElementById("nombre").value="";
  document.getElementById("apellido").value="";
  document.getElementById("email").value="";
